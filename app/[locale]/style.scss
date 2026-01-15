@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+// font-family: "Jersey 15", sans-serif;
+// font-family: 'Inter', sans-serif;
+
+// 300 = light
+// 400 regular
+// 500 == medium
+// 600 == semi-bold
+// 700 == bold
+
+/* ====== VARIÁVEIS ====== */
+// CORES
+$white: #F9FAFB;
+
+$dark-01: #0B0F14;
+$dark-02: #000000;
+$dark-03: #0A0B0D;
+$dark-04: #151618;
+$dark-05: #1D1F21;
+$dark-06: #26282B;
+$dark-07: #2E3034;
+$dark-08: #35373B;
+$dark-09: #3E4145;
+
+$primary-01: #F1E8FF;
+$primary-02: #D2B6FF;
+$primary-03: #B383FF;
+$primary-04: #9451FF;
+$primary-05: #751EFE;
+$primary-06: #5D0DDC;
+$primary-07: #4800BA;
+$primary-08: #3B0098;
+$primary-09: #2E0076;
+$primary-10: #210054;
+
+$secondary-01: #E8F9FF;
+$secondary-02: #B5EEFF;
+$secondary-03: #83E2FF;
+$secondary-04: #50D6FF;
+$secondary-05: #1CC2F5;
+$secondary-06: #0BA4D3;
+$secondary-07: #0087B1;
+$secondary-08: #006D8F;
+$secondary-09: #00536D;
+$secondary-10: #00394B;
+
+
+// TIPOGRAFIA
+
+// headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 4.9rem; // 49px
+}
+
+h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 4.6rem; // 46px
+}
+
+h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 4.0rem; // 40px
+}
+
+h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 3.7rem; // 37px
+}
+
+h5 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 3.1rem; // 31px
+}
+
+h6 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem; // 25px
+}
+
+
+// body
+
+body,
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem; // 18px
+}
+
+.body-big {
+    font-size: 2.0rem; // 20px
+}
+
+.body-small {
+    font-size: 1.6rem; // 16px
+}
+
+// input
+
+input,
+input::placeholder {
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.input-small,
+.input-small::placeholder,
+textarea,
+textarea::placeholder {
+    font-size: 1.6rem;
+}
+
+.input-large,
+.input-large::placeholder {
+    font-size: 2rem;
+}
+
+// caption
+
+span, .caption {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem; // 22px
+}
+
+.caption-max {
+    font-size: 2.6rem; // 26px
+}
+
+.caption-min {
+    font-size: 1.9rem; // 19px
+}
+
+// button
+
+button {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem; // 22px
+}
+
+.button-max {
+    font-size: 2.6rem; // 26px
+}
+
+.button-min {
+    font-size: 1.9rem; // 19px
+}
+
+// link
+
+a {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem; // 22px
+}
+
+.link-max {
+    font-size: 2.6rem; // 26px
+}
+
+.link-min {
+    font-size: 1.9rem; // 19px
+}
+
+// label
+
+label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem; // 15px
+}
+
+.label-max {
+    font-size: 1.7rem; // 17px
+}
+
+.label-min {
+    font-size: 1.4rem; // 14px
+}
+
+/* ====== ASSETS ====== */
+
+
+/* ====== BODY/HTML/ROOT ====== */
+
+:root {
+    font-size: 65%;
+}
+
+body {
+    font-size: 1.8rem;
+    background-color: #001A1B;
+    color: #00B7BD;
+}
+
+/* ====== HEADER ====== */
+
+header {}
+
+/* ====== MAIN ====== */
+
+main {}
+
+/* ====== FOOTER ====== */
+
+footer {}
+
+/* ====== MEDIA QUERY ====== */
+
+@media (max-width: 1400px) {
+    :root {
+        font-size: 63%;
+
+    }
+}

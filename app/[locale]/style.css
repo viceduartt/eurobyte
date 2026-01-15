@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* ====== VARIÁVEIS ====== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 4.9rem;
+}
+
+h2 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+h4 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 3.7rem;
+}
+
+h5 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 3.1rem;
+}
+
+h6 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+body,
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.body-big {
+  font-size: 2rem;
+}
+
+.body-small {
+  font-size: 1.6rem;
+}
+
+input::-moz-placeholder {
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+input,
+input::placeholder {
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.input-small::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 1.6rem;
+}
+
+.input-small,
+.input-small::placeholder,
+textarea,
+textarea::placeholder {
+  font-size: 1.6rem;
+}
+
+.input-large::-moz-placeholder {
+  font-size: 2rem;
+}
+
+.input-large,
+.input-large::placeholder {
+  font-size: 2rem;
+}
+
+span, .caption {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.caption-max {
+  font-size: 2.6rem;
+}
+
+.caption-min {
+  font-size: 1.9rem;
+}
+
+button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.button-max {
+  font-size: 2.6rem;
+}
+
+.button-min {
+  font-size: 1.9rem;
+}
+
+a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.link-max {
+  font-size: 2.6rem;
+}
+
+.link-min {
+  font-size: 1.9rem;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.label-max {
+  font-size: 1.7rem;
+}
+
+.label-min {
+  font-size: 1.4rem;
+}
+
+/* ====== ASSETS ====== */
+/* ====== BODY/HTML/ROOT ====== */
+:root {
+  font-size: 65%;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #001A1B;
+  color: #00B7BD;
+}
+
+/* ====== HEADER ====== */
+/* ====== MAIN ====== */
+/* ====== FOOTER ====== */
+/* ====== MEDIA QUERY ====== */
+@media (max-width: 1400px) {
+  :root {
+    font-size: 63%;
+  }
+}/*# sourceMappingURL=style.css.map */
