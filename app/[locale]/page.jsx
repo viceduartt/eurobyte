@@ -5,6 +5,16 @@ import gsap from "gsap";
 
 import Header from "./components/Header";
 
+const imgPcHero = ""
+
+const imgPc = "/images/pc.svg"
+const imgMonitor = "/images/monitor.svg"
+const imgHardware = "/images/hardware.svg"
+const imgLaptop = "/images/laptop.svg"
+const imgPeripheral = "/images/peripherals.svg"
+const imgEmphasis = "/images/emphasis.svg"
+const imgCategory = "/icons/category.svg"
+
 
 
 
@@ -36,7 +46,7 @@ function Home() {
 
           <div className="category">
             <div className="groupheading">
-              <img src={category} alt="" />
+              <img src={imgCategory} alt="" />
 
               <h2>Categorias</h2>
             </div>
@@ -54,7 +64,7 @@ function Home() {
                 <h3>Notebooks</h3>
 
                 <div className="card">
-                  <img src={imgPc} alt="" />
+                  <img src={imgLaptop} alt="" />
                 </div>
               </div>
 
@@ -62,7 +72,7 @@ function Home() {
                 <h3>Hardware</h3>
 
                 <div className="card">
-                  <img src={imgPc} alt="" />
+                  <img src={imgHardware} alt="" />
                 </div>
               </div>
 
@@ -71,7 +81,7 @@ function Home() {
                 <h3>Periféricos</h3>
 
                 <div className="card">
-                  <img src={imgPc} alt="" />
+                  <img src={imgPeripheral} alt="" />
                 </div>
               </div>
 
@@ -79,14 +89,12 @@ function Home() {
                 <h3>Monitores</h3>
 
                 <div className="card">
-                  <img src={imgPc} alt="" />
+                  <img src={imgMonitor} alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
       </main>
     </>
   );

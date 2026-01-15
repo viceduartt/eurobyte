@@ -4,7 +4,19 @@ import { useTranslations } from "next-intl";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-
+const iconSearch = "/images/monitor.svg"
+const iconLangPt = "/images/monitor.svg"
+const iconLangEn = "/images/monitor.svg"
+const iconLangFr = "/images/monitor.svg"
+const iconLangEs = "/images/monitor.svg"
+const imgLogoBig = "/images/monitor.svg"
+const imgLogoSmall = "/images/monitor.svg"
+const iconMore = "/images/monitor.svg"
+const iconFavorite = "/images/monitor.svg"
+const iconAccount = "/images/monitor.svg"
+const photoClient = "/images/monitor.svg"
+const iconNotification = "/images/monitor.svg"
+const iconSettings = "/images/monitor.svg"
 
 function Header() {
   const home = useTranslations("home")
@@ -13,7 +25,7 @@ function Header() {
     <>
       <header>
         <div className="group-logo-search">
-          <img src={logo} alt="" />
+          <img src={imgLogoBig} alt="" />
 
           <label htmlFor="search">
             <img src={iconSearch} alt="" className="icon-search" />
@@ -26,16 +38,15 @@ function Header() {
           <div className="group-langs">
             <div className="selected-lang">
 
-              <img src={icon} alt="" className="icon-langs" />
+              <img src={iconLangFr} alt="" className="icon-langs" />
 
               <img src={iconMore} alt="" className="icon-more" />
             </div>
 
             <div className="options-langs">
-              <img src={iconLangFr} alt="" />
               <img src={iconLangEn} alt="" />
-              <img src={iconLangPt} alt="" />
               <img src={iconLangEs} alt="" />
+              <img src={iconLangPt} alt="" />
             </div>
           </div>
 
