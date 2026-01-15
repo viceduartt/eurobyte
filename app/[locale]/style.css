@@ -94,7 +94,8 @@ textarea::placeholder {
   font-size: 2rem;
 }
 
-span, .caption {
+span,
+.caption {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 2.2rem;
@@ -151,6 +152,10 @@ label {
 }
 
 /* ====== ASSETS ====== */
+.disable {
+  display: none;
+}
+
 /* ====== BODY/HTML/ROOT ====== */
 :root {
   font-size: 65%;
@@ -158,16 +163,245 @@ label {
 
 body {
   font-size: 1.8rem;
-  background-color: #001A1B;
-  color: #00B7BD;
+  color: #F9FAFB;
+  background: linear-gradient(180deg, #0B0F14 40%, #9827FF 100%);
 }
 
 /* ====== HEADER ====== */
+header {
+  background: linear-gradient(180deg, rgba(89, 13, 161, 0.84) 0%, #0B0F14 100%);
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 4.2rem;
+  border-radius: 1.2rem;
+}
+header .group-favorite {
+  position: relative;
+}
+header .group-favorite .icon-favorite {
+  width: 3.2rem;
+}
+header .group-favorite .bg-qtds-products {
+  display: flex;
+  display: none;
+  position: absolute;
+  background-color: red;
+  border: 0.2rem solid #F9FAFB;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  top: -2.3rem;
+  left: 1rem;
+}
+header .group-favorite .bg-qtds-products .product-qtds {
+  font-size: 1.3rem;
+  color: #F9FAFB;
+}
+header .search {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #83E2FF;
+  border-radius: 1.2rem;
+  padding: 1rem 1.5rem;
+  gap: 1.5rem;
+  opacity: 0.9;
+  transition: all 0.5s;
+  cursor: text;
+}
+header .search:hover {
+  opacity: 1;
+}
+header .search input {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+header .group-logo-search {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+header .group-login {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 13rem;
+  top: 4rem;
+  right: 0.1rem;
+  gap: 1rem;
+  background-color: rgb(199, 199, 199);
+}
+header .group-account {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+header .group-account img {
+  width: 3rem;
+}
+header .options-langs {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 4rem;
+  gap: 1.6rem;
+}
+header .client-ghost {
+  display: flex;
+  position: relative;
+  gap: 2rem;
+}
+header .group-langs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+header .group-langs .selected-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .group-langs .icon-langs {
+  width: 3rem;
+}
+header .group-langs .icon-more {
+  width: 1.6rem;
+}
+header .group-langs-account-favorite {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 /* ====== MAIN ====== */
+main {
+  height: 83vh;
+  margin-top: 4rem;
+}
+main .group-hero-category {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .category {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  padding: 0 4rem;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  box-sizing: content-box;
+}
+main .category .group-cards {
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .category .group-cards .group-heading-card {
+  opacity: 0.9;
+  transition: 0.5s all;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+main .category .group-cards .group-heading-card:hover {
+  opacity: 1;
+}
+main .category .group-cards .group-heading-card #computador img {
+  width: 55%;
+}
+main .category .group-cards .group-heading-card .card {
+  width: 17.1rem;
+  height: 17.1rem;
+  background: linear-gradient(126.023deg, rgba(80, 214, 255, 0.5019607843) 0%, rgba(0, 0, 0, 0.5019607843) 38%);
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .category .group-cards .group-heading-card .card img {
+  width: 80%;
+  position: relative;
+  top: -1rem;
+}
+main .category .group-cards .group-heading-card h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+main .category .groupheading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+main .category .groupheading h2 {
+  font-size: 2.4rem;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+}
+main .category .group-cards {
+  display: flex;
+}
+main .hero {
+  padding: 0 4.2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .hero .copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .hero .copy button {
+  transition: 0.5s all;
+  opacity: 0.9;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 1rem 2.4rem;
+  border-radius: 1.2rem;
+  border: 0.3rem solid #50D6FF;
+  background-color: transparent;
+}
+main .hero .copy button:hover {
+  opacity: 1;
+}
+main .hero .group-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .hero .group-text .color-blue {
+  color: #50D6FF;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 4.9rem;
+}
+main .hero .img-pc {
+  height: 46.4rem;
+}
+
 /* ====== FOOTER ====== */
 /* ====== MEDIA QUERY ====== */
-@media (max-width: 1400px) {
+@media (max-width: 1377px) {
   :root {
-    font-size: 63%;
+    font-size: 51%;
+  }
+  .img-emphasis {
+    width: 46vw;
   }
 }/*# sourceMappingURL=style.css.map */

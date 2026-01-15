@@ -10,12 +10,12 @@ export async function generateMetadata({ params }) {
   const { locale } = await params
   const messages = await getMessages(locale)
   const meta = messages?.meta || {}
-  const baseUrl = 'http://localhost:3000'
+  const baseUrl = 'https://eurobyte.store/'
 
-  const title = meta.title || 'eurobyte'
-  const description = meta.description || 'eurobyte loja virtual.'
+  const title = 'eurobyte'
+  const description = 'eurobyte loja virtual.'
   const image = `${baseUrl}/favicon.png`
-  const url = meta.url || `${baseUrl}/${locale}`
+  const url =`${baseUrl}/${locale}`
 
   //console.log(meta)
 

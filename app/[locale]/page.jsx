@@ -32,7 +32,7 @@ function Home() {
           <div className="hero">
             <div className="copy">
               <div className="group-text">
-                <h1>A junção entre <span className="color-blue">Hardware & Software</span></h1>
+                <h1>A junção entre <span className="color-blue">Hardware <br /> & Software</span></h1>
                 <p>Tenha acesso aos melhores componentes sem doer no bolso</p>
               </div>
 
@@ -40,7 +40,7 @@ function Home() {
             </div>
 
             <div className="container-img">
-              <img src={imgEmphasis} alt="" />
+              <img src={imgEmphasis} className="img-emphasis" alt="" />
             </div>
           </div>
 
@@ -55,7 +55,7 @@ function Home() {
               <div className="group-heading-card">
                 <h3>Computadores</h3>
 
-                <div className="card">
+                <div className="card" id="computador">
                   <img src={imgPc} alt="" />
                 </div>
               </div>
